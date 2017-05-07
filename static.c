@@ -18,7 +18,7 @@ flag=1;
 	glClearColor(0.196078  ,0.6 ,0.8,1.0);
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 glColor3f(0.4,0.25,0.1);
-		glBegin(GL_POLYGON);//green ground
+		glBegin(GL_POLYGON);// ground
 		glVertex2f(0.0,0.0);
 		glVertex2f(0.0,250.0);
 		glVertex2f(270.0,250.0);
@@ -26,7 +26,7 @@ glColor3f(0.4,0.25,0.1);
 		glVertex2f(500.0,0.0);
 		glEnd();
 
-		glBegin(GL_POLYGON);//green ground
+		glBegin(GL_POLYGON);// ground
 		glVertex2f(280.0,250.0);
 		glVertex2f(500.0,250.0);
 		glVertex2f(500.0,60.0);
