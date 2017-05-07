@@ -111,6 +111,16 @@ glColor3f(0.4,0.25,0.1);
 			glEnd();
 			
 
+	glColor3f(0.0,0.0 ,0.0);
+			glBegin(GL_LINES);//wires
+			glVertex2f(37,313);
+			glVertex2f(62,310);
+			glVertex2f(63,287);
+			glVertex2f(62,310);
+			glEnd();
+		glColor3f(1.0,1.0,1.0);
+
+		glEnd();
 	
 		glPointSize(2.0);
 
