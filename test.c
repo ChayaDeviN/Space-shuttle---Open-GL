@@ -125,9 +125,6 @@ glColor3f(0.4,0.25,0.1);
 		
 		glPointSize(2.0);
 
-	if((p%2)==0)
-				 glColor3f(1.0,0.25,0.0);
-				
 
 	glColor3f(0.8,0.498039 ,0.196078);
 	glBegin(GL_POLYGON);//core
