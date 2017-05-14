@@ -11,7 +11,7 @@ int p;
 
 void static_rocket();
 
-float i,j,count=0,count1=0,count3=0,flag=0,flag1=0,t=0,f=0,flag3=0;
+float i,j,count=0,count1=0,flag=0,flag1=0,t=0,f=0;
 void semicircle(float radius,float u,float v)
 {
 
