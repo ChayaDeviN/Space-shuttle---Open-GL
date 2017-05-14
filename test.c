@@ -219,8 +219,8 @@ void myinit()
 {
 	//int i;
 	glClearColor(0.196078  ,0.6 ,0.8,1.0);
-
-
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
 	glPointSize(1.0);
 	gluOrtho2D(0.0,499.0,0.0,499.0);
 }
