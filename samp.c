@@ -332,8 +332,7 @@ glVertex2f(312.5,85.0);//right_stand_holder
 	glVertex2f(312.5,85.0);
 	
 	glEnd();
-for(j=0;j<=1000000;j++)
-		;
+for(j=0;j<=1000000;j++);
 	glutSwapBuffers();
 	glutPostRedisplay();
 	glFlush();
@@ -466,7 +465,7 @@ for(i=0;i<=200;i++)
 		glVertex2f(262.5,20+i);//21 points
 
 		glEnd();
-		p=p+1;
+		
 	for(j=0;j<=1000000;j++)
 		;
 	glutSwapBuffers();
@@ -487,13 +486,12 @@ for(i=195;i<=200;i++)
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	if(flag1==0)
 	{
-	stars();
-	flag1=1;
+		stars();
+		flag1=1;
 	}
 	else
 	{
 		stars1();
-
 		flag1=0;
 	}
 
@@ -504,7 +502,7 @@ for(i=195;i<=200;i++)
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	 }
 	 if(count>=100)
-	 mars(20.0);
+	 mars(25.0);
 	glColor3f(0.8,0.498039 ,0.196078);
 	glBegin(GL_POLYGON);//core
 		glVertex2f(237.5,20.0+i);
@@ -615,7 +613,7 @@ for(i=195;i<=200;i++)
 		glVertex2f(262.5,20+i);//21 points
 
 		glEnd();
-		p=p+1;
+		
 
 
 	for(j=0;j<=1000000;j++)
@@ -648,8 +646,6 @@ void myinit()
 {
 	//int i;
 	glClearColor(0.196078  ,0.6 ,0.8,1.0);
-
-
 	glPointSize(1.0);
 	gluOrtho2D(0.0,499.0,0.0,499.0);
 }
@@ -664,13 +660,10 @@ int main(int argc,char*argv[])
 	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB);
 	glutInitWindowSize(500,500);
 	glutCreateWindow("rocket");
-
 	glutIdleFunc(display1);
 	glutDisplayFunc(display1);
 	myinit();
-
-
-   glutMainLoop();
+	glutMainLoop();
    return 0;
 }
 
