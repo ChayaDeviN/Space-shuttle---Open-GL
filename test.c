@@ -14,11 +14,11 @@ void static_rocket();
 float i,j,count=0,count1=0,flag=0,flag1=0,t=0,f=0;
 void semicircle(float radius,float u,float v)
 {
-
+	int i;
 	glColor3f(1.0 ,1.0 ,1.0);
    glBegin(GL_POLYGON);
 
-   for (int i=135; i<=315; i++)
+   for (i=135; i<=315; i++)
    {
       float degInRad = i*DEG2RAD;
       glVertex2f(u+cos(degInRad)*radius,v+(sin(degInRad))*radius);//100,100 specifies centre of the circle

@@ -231,6 +231,7 @@ glVertex2f(312.5,85.0);//right_stand_holder
 	glutPostRedisplay();
 	glFlush();
 }
+}
 void myinit()
 {
 	

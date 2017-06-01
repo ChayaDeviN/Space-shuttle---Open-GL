@@ -17,11 +17,11 @@ void mars(float radius);
 float i,j,count=0,count1=0,count3=0,flag=0,flag1=0,t=0,f=0,flag3=0;
 void semicircle(float radius,float u,float v)
 {
-
+	int i;
 	glColor3f(1.0 ,1.0 ,1.0);
    glBegin(GL_POLYGON);
 
-   for (int i=135; i<=315; i++)
+   for (i=135; i<=315; i++)
    {
       float degInRad = i*DEG2RAD;
       glVertex2f(u+cos(degInRad)*radius,v+(sin(degInRad))*radius);//100,100 specifies centre of the circle
@@ -34,11 +34,11 @@ void display1()
 {
 
 count1++;
- if(count1==250)
+ if(count1==1500)
       flag=1;
    if(flag==0)
        static_rocket();
- else if((count1==151)| (count1==152))
+ else if((count1==1201)| (count1==1202))
        rocket_to_cam_pos();
   else
       rocket_in_motion();
@@ -169,7 +169,7 @@ void static_rocket()
 {
 
 count1++;
-if(count1==150)
+if(count1==1200)
 flag=1;
   if(flag==0)
   {
@@ -627,10 +627,10 @@ for(i=195;i<=200;i++)
 void mars(float radius)
 {
 
-
+   int i;
    glBegin(GL_POLYGON);
 
-   for (int i=0; i<=359; i++)
+   for ( i=0; i<=359; i++)
    {
       float degInRad = i*DEG2RAD;
       glVertex2f(300+f+cos(degInRad)*radius,500-t+(sin(degInRad))*radius);//100,100 specifies centre of the circle
