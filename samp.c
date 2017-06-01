@@ -34,11 +34,11 @@ void display1()
 {
 
 count1++;
- if(count1==250)
+ if(count1==1500)
       flag=1;
    if(flag==0)
        static_rocket();
- else if((count1==151)| (count1==152))
+ else if((count1==1201)| (count1==1202))
        rocket_to_cam_pos();
   else
       rocket_in_motion();
@@ -169,7 +169,7 @@ void static_rocket()
 {
 
 count1++;
-if(count1==150)
+if(count1==1200)
 flag=1;
   if(flag==0)
   {
