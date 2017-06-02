@@ -13,7 +13,11 @@ void static_rocket();
 void rocket_to_cam_pos();
 void rocket_in_motion();
 void mars(float radius);
-float i,j,count=0,count1=0,count3=0,flag=0,flag1=0,t=0,f=0,flag3=0;
+float i,j,
+	count=0,    /*used to count delay in launching*/
+	count1=0,  /*used to count blue sky delay*/
+	count3=0,  /*used to count black sky delay*/
+flag=0,flag1=0,t=0,f=0,flag3=0;
 void semicircle(float radius,float u,float v)
 {	
 	
