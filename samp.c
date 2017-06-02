@@ -224,7 +224,14 @@ if(flag==0)
 	        glVertex2f(278,248);
 		glEnd();
 
-
+	glColor3f(0.0,0.0 ,0.0);
+		glBegin(GL_LINES);//wires
+		glVertex2f(37,313);
+		glVertex2f(62,310);
+		glVertex2f(63,287);
+		glVertex2f(62,310);
+		glEnd();
+	  
 	glColor3f(0.8,0.498039 ,0.196078);
 		glBegin(GL_POLYGON);//house 1
 		glVertex2f(250.0,250.0);
