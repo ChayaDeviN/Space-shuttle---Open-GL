@@ -355,18 +355,15 @@ glBegin(GL_POLYGON);//left_stand_holder
 	  
 glColor3f(0.556863,0.137255,0.137255);
 glBegin(GL_POLYGON);
-glVertex2f(312.5,85.0);//right_stand_holder
+	glVertex2f(312.5,85.0);//right_stand_holder
 	glVertex2f(312.5,0.0);
 	glVertex2f(307.5,0.0);
 	glVertex2f(307.5,80.0);
 	glVertex2f(262.5,80.0);
 	glVertex2f(262.5,85.0);
 	glVertex2f(312.5,85.0);
-	
-	glEnd();
-
+glEnd();
 	glutSwapBuffers();
-	glutPostRedisplay();
 	glFlush();
 	
 	
@@ -473,7 +470,7 @@ for(i=0;i<=200;i++)
 
 
 
-		glBegin(GL_POLYGON);//inner fume
+	glBegin(GL_POLYGON);//inner fume
 		glVertex2f(237.5,20+i);
 		glVertex2f(236.5,17.5+i);
 		glVertex2f(235.5,15+i);
@@ -495,13 +492,9 @@ for(i=0;i<=200;i++)
 		glVertex2f(264.5,15+i);
 		glVertex2f(263.5,17.5+i);
 		glVertex2f(262.5,20+i);//21 points
-
-		glEnd();
-		
-	
-	glutSwapBuffers();
-	glutPostRedisplay();
-	glFlush();
+	glEnd();
+		glutSwapBuffers();
+		glFlush();
 }
 }
 void rocket_in_motion()
