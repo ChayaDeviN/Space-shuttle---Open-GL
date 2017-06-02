@@ -667,20 +667,13 @@ for(i=195;i<=200;i++)
 		glVertex2f(263.5,17.5+i);
 		glVertex2f(262.5,20+i);//21 points
 		glEnd();
-		
-
-
-	for(j=0;j<=1000000;j++)
-		;
 	glutSwapBuffers();
-	glutPostRedisplay();
 	glFlush();
 }
 }
 
 void mars(float radius)
 {
-
 
    glBegin(GL_POLYGON);
 
@@ -703,10 +696,6 @@ void myinit()
 	glPointSize(1.0);
 	gluOrtho2D(0.0,499.0,0.0,499.0);
 }
-
-
-
-
 
 int main(int argc,char*argv[])
 {
