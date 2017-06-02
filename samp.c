@@ -418,17 +418,22 @@ for(i=0;i<=200;i++)
 	glVertex2f(262.5,95.0+i);
 	glVertex2f(282.5,95.0+i);
 	glEnd();
-	glColor3f(0.556863 ,0.137255  ,0.419608);
+	
+	glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_1_exhaust
 	glVertex2f(237.5,20.0+i);
 	glVertex2f(244.5,20.0+i);
 	glVertex2f(241,0.0+i);
 	glEnd();
+	
+	glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_2_exhaust
 	glVertex2f(246.5,20.0+i);
 	glVertex2f(253.5,20.0+i);
 	glVertex2f(249.5,0.0+i);
 	glEnd();
+	
+	glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_3_exhaust
 	glVertex2f(262.5,20.0+i);
 	glVertex2f(255.5,20.0+i);
@@ -436,7 +441,7 @@ for(i=0;i<=200;i++)
 	glEnd();
 
 	
-				 glBegin(GL_POLYGON);//outer fume
+	 glBegin(GL_POLYGON);//outer fume
 		glVertex2f(237.5,20+i);
 		glVertex2f(234.16,16.66+i);
 		glVertex2f(230.82,13.32+i);
@@ -465,7 +470,7 @@ for(i=0;i<=200;i++)
 		glVertex2f(270.5,12+i);
 		glVertex2f(266.5,16+i);
 		glVertex2f(262.5,20+i);//28 points
-		glEnd();
+	glEnd();
 
 
 
@@ -564,17 +569,22 @@ for(i=195;i<=200;i++)
 	glVertex2f(262.5,95.0+i);
 	glVertex2f(282.5,95.0+i);
 	glEnd();
-	glColor3f(0.556863 ,0.137255  ,0.419608);
+	
+	glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_1_exhaust
 	glVertex2f(237.5,20.0+i);
 	glVertex2f(244.5,20.0+i);
 	glVertex2f(241,0.0+i);
 	glEnd();
+	
+	glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_2_exhaust
 	glVertex2f(246.5,20.0+i);
 	glVertex2f(253.5,20.0+i);
 	glVertex2f(249.5,0.0+i);
 	glEnd();
+	
+	glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_3_exhaust
 	glVertex2f(262.5,20.0+i);
 	glVertex2f(255.5,20.0+i);
@@ -582,7 +592,7 @@ for(i=195;i<=200;i++)
 	glEnd();
 	
 
-				 glBegin(GL_POLYGON);//outer fume
+	 glBegin(GL_POLYGON);//outer fume
 		glVertex2f(237.5,20+i);
 		glVertex2f(234.16,16.66+i);
 		glVertex2f(230.82,13.32+i);
@@ -613,7 +623,7 @@ for(i=195;i<=200;i++)
 		glVertex2f(262.5,20+i);//28 points
 		glEnd();
 
-		glBegin(GL_POLYGON);//inner fume
+	glBegin(GL_POLYGON);//inner fume
 		glVertex2f(237.5,20+i);
 		glVertex2f(236.5,17.5+i);
 		glVertex2f(235.5,15+i);
@@ -635,8 +645,7 @@ for(i=195;i<=200;i++)
 		glVertex2f(264.5,15+i);
 		glVertex2f(263.5,17.5+i);
 		glVertex2f(262.5,20+i);//21 points
-
-		glEnd();
+	glEnd();
 		
 
 
