@@ -242,6 +242,20 @@ glColor3f(0.4,0.25,0.1);
 			glVertex2f(255.0,277.5);
 			glEnd();
 		
+	  	glBegin(GL_POLYGON);//HOUSE B
+			glVertex2f(255,285.0);
+			glVertex2f(275.0,285);
+			glVertex2f(275.0,295);
+			glVertex2f(255.0,295);
+			glEnd();
+
+		glBegin(GL_POLYGON);//HOUSE C
+			glVertex2f(255,302.5);
+			glVertex2f(275.0,302.5);
+			glVertex2f(275.0,312.5);
+			glVertex2f(255.0,312.5);
+			glEnd();
+
 		glBegin(GL_POLYGON);//HOUSE D
 			glVertex2f(255,320.0);
 			glVertex2f(275.0,320.0);
