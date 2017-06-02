@@ -195,7 +195,35 @@ glColor3f(0.4,0.25,0.1);
 		glVertex2f(500.0,70.0);
 		glVertex2f(500.0,40.0);
 		glEnd();
-		glColor3f(0.0,0.0,0.0);
+			
+	  
+	  	glColor3f(1.0,1.0 ,1.0);
+			glBegin(GL_POINTS);//road paint
+			glVertex2f(497,56);
+			glVertex2f(488,65);
+			glVertex2f(479,74);
+			glVertex2f(470,83);
+			glVertex2f(460,92);
+			glVertex2f(450,101);
+			glVertex2f(439,110);
+			glVertex2f(428,119);
+			glVertex2f(418,128);
+			glVertex2f(408,137);
+			glVertex2f(398,146);
+			glVertex2f(388,155);
+			glVertex2f(378,164);
+			glVertex2f(366,173);
+			glVertex2f(356,182);
+			glVertex2f(346,191);
+			glVertex2f(336,200);
+			glVertex2f(324,209);
+			glVertex2f(314,218);
+			glVertex2f(304,227);
+			glVertex2f(294,234);
+			glVertex2f(284,243);
+	        glVertex2f(278,248);
+
+			glEnd();
 
 
 		glColor3f(0.8,0.498039 ,0.196078);
