@@ -34,11 +34,11 @@ void display1()
 {
 
 count1++;
- if(count1==250)
+ if(count1==1000)
       flag=1;
    if(flag==0)
        static_rocket();
- else if((count1==151)| (count1==152))
+ else if((count1==1001)| (count1==1002))
        rocket_to_cam_pos();
   else
       rocket_in_motion();
@@ -162,8 +162,7 @@ void stars1()
 	glVertex2i(243,143);
 	glVertex2i(243,143);
 	glEnd();
-	for(l=0;l<=10000;l++)
-		;
+	
 }
 void static_rocket()
 {
@@ -259,8 +258,6 @@ glColor3f(0.4,0.25,0.1);
 		glVertex2f(262.5,20.0);
 		glVertex2f(262.5,120.0);
 		glVertex2f(237.5,120.0);
-
-
 	glEnd();
 
 	glColor3f(1.0,1.0,1.0);//bonnet
@@ -332,7 +329,7 @@ glVertex2f(312.5,85.0);//right_stand_holder
 	glVertex2f(312.5,85.0);
 	
 	glEnd();
-for(j=0;j<=1000000;j++);
+
 	glutSwapBuffers();
 	glutPostRedisplay();
 	glFlush();
@@ -466,8 +463,7 @@ for(i=0;i<=200;i++)
 
 		glEnd();
 		
-	for(j=0;j<=1000000;j++)
-		;
+	
 	glutSwapBuffers();
 	glutPostRedisplay();
 	glFlush();
