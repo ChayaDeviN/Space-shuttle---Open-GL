@@ -291,24 +291,29 @@ glBegin(GL_TRIANGLES);//front
 	glVertex2f(282.5,95.0);
 	glEnd();
 
-glColor3f(0.556863 ,0.137255  ,0.419608);
+glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_1_exhaust
 	glVertex2f(237.5,20.0);
 	glVertex2f(244.5,20.0);
 	glVertex2f(241,0.0);
 	glEnd();
 	
+	  glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_2_exhaust
 	glVertex2f(246.5,20.0);
 	glVertex2f(253.5,20.0);
 	glVertex2f(249.5,0.0);
 	glEnd();
+	  
+	  glColor3f(1.0,0.25,0.0);
 		glBegin(GL_POLYGON);//bottom_3_exhaust
 	glVertex2f(262.5,20.0);
 	glVertex2f(255.5,20.0);
 	glVertex2f(258.5,0.0);
 	glEnd();
 
+	  
+glColor3f(0.556863,0.137255,0.137255);
 glBegin(GL_POLYGON);//left_stand_holder
 	glVertex2f(182.5,85.0);
 	glVertex2f(182.5,0.0);
@@ -319,7 +324,9 @@ glBegin(GL_POLYGON);//left_stand_holder
 	glVertex2f(182.5,85.0);
 	glEnd();
 	
-	glBegin(GL_POLYGON);
+	  
+glColor3f(0.556863,0.137255,0.137255);
+glBegin(GL_POLYGON);
 glVertex2f(312.5,85.0);//right_stand_holder
 	glVertex2f(312.5,0.0);
 	glVertex2f(307.5,0.0);
