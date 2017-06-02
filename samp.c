@@ -549,7 +549,7 @@ void rocket_in_motion()
 			glClearColor(0.196078  ,0.6 ,0.8,1.0);
 			glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 		}	
-		 if(count>=100)
+		if(count>=100)
 		 	mars(25.0);
 		glColor3f(0.8,0.498039 ,0.196078);
 			glBegin(GL_POLYGON);//core
@@ -676,8 +676,7 @@ void mars(float radius)
 {
 
    glBegin(GL_POLYGON);
-
-   for (int i=0; i<=359; i++)
+for (int i=0; i<=359; i++)
    {
       float degInRad = i*DEG2RAD;
       glVertex2f(300+f+cos(degInRad)*radius,500-t+(sin(degInRad))*radius);//100,100 specifies centre of the circle
